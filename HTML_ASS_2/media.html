@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Media</title>
+</head>
+<body>
+<main>
+    <section>
+        <picture>
+            <source srcset="small.jpg" media="(max-width: 600px)">
+            <source srcset="medium.jpg" media="(max-width: 1024px)">
+            <source srcset="large.jpg" media="(min-width: 1025px)">
+            <img src="default.jpg" alt="My Picture">
+        </picture>
+        
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <video controls width="400">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=qz0aGYrrlhU" frameborder="0" allowfullscreen></iframe>
+    </section>
+</main>    
+</body>
+</html>
